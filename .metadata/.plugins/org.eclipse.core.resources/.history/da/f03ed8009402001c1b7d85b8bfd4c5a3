@@ -1,0 +1,12 @@
+package P다트게임;
+
+public class Solution {
+	public static void main(String[] args) {
+		
+		int res = solution("1S2D*3T");
+		System.out.println(res);
+		
+	}
+	public static int solution(String dartResult) {
+    }
+}

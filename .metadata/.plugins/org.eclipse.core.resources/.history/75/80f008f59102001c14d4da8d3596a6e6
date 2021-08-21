@@ -1,0 +1,80 @@
+package P다트게임;
+
+public class Solution {
+	public static void main(String[] args) {
+		
+		int res = solution("1S2D*3T");
+		System.out.println(res);
+		
+	}
+	public static int solution(String dartResult) {
+		int answer = 0;
+		
+		boolean ckN1 = false;	//숫자 체크
+		boolean ckN2 = false;
+		boolean ckN3 = false;
+		
+		boolean ckC1 = false;	//문자 체크
+		boolean ckC2 = false;
+		boolean ckC3 = false;
+		
+		int num1 = 0;	//숫자 더하기
+		int num2 = 0;
+		int num3 = 0;
+
+		int leng = dartResult.length();
+
+		int tmp = 0;
+		for(int i=0;i<leng;i++) {
+
+			//숫자면 (문자 전부 다 아니면)
+			if(dartResult.charAt(i)!='S' && dartResult.charAt(i)!='D' && dartResult.charAt(i)!='T' && dartResult.charAt(i)!='*' && dartResult.charAt(i)!='#') {
+				//10인 경우
+				if(dartResult.charAt(i)=='1'&& dartResult.charAt(i+1)=='0') {
+					tmp = 10;
+					i++;
+				}
+				else {
+					tmp = dartResult.charAt(i)-'0';
+				}
+				
+				if(!ckN1) {
+					num1=tmp;
+					ckN1 = true;
+				}
+				else if(!ckN2) {
+					num2=tmp;
+					ckN2 = true;
+					ckC1 = true;
+				}
+				else {
+					num3=tmp;
+					ckN3 = true;
+					ckC2 = true;
+				}
+			}
+			//보너스 문자
+			else if(dartResult.charAt(i)=='S' || dartResult.charAt(i)=='D' || dartResult.charAt(i)!='T') {
+				if(dartResult.charAt(i)=='D') {
+					//첫번째 보너스 
+					if(!ckC1) {
+						num1 = num1 * num1;
+						ckC1 = true;
+					}
+					else if(!ckC2) {
+						num2 = num2 * num2;
+						ckC1 = true;
+					}
+					else {
+						
+					}
+				}
+			}
+		}
+
+
+
+
+		return answer;
+    }
+}

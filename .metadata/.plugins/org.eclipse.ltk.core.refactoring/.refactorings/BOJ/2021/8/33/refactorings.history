@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;BOJ11265_끝나지_않는_파티&apos; to &apos;BOJ/src&apos;&#x0D;&#x0A;- Original project: &apos;BOJ&apos;&#x0D;&#x0A;- Destination element: &apos;BOJ/src&apos;&#x0D;&#x0A;- Original element: &apos;BOJ/src/BOJ11265_끝나지_않는_파티&apos;" description="Copy package" destination="/src" element1="/src&lt;BOJ11265_끝나지_않는_파티" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1628411917025" version="1.0"/>
+</session>
