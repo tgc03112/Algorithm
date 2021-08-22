@@ -1,0 +1,14 @@
+package P비밀지도;
+
+public class Solution {
+	public static void main(String[] args) {
+
+	}
+	public String[] solution(int n, int[] arr1, int[] arr2) {
+		String[] answer = {};
+		
+		int[][] map1 = new int[n][n]; 
+		
+        return answer;
+    }
+}
