@@ -6,7 +6,7 @@ package P비밀지도;
 	
 	Integer.toBinaryString : 10진수를 2진수로 바꿔줌
 	
-	String 문자열 변환하는 메소드 or math 알아두기, import 알아두기
+	String 문자열 변환하는 메소드 or math 알아두기, import 알아두기  
 */
 
 public class Solution {
